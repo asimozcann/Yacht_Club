@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacht Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Source+Serif+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preLoader">
+        <div class="circle">
+            <div class="wave">
+
+            </div>
+        </div>
+    </div>
+    <section class="header">
+
+        <nav>
+            <a href="index.html"><img src="image/yacht-sea.avif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="">Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="">Turlar</a>
+                    </li>
+                    <li>
+                        <a href="">Galeri</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Hakkımızda</a>
+                    </li>
+                    <li>
+                        <a href="">İletişim</a>
+                    </li>
+
+
+                </ul>
+                <div class="toggle"></div>
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <video id="headerVideo" preload="metadata" loop autoplay>
+            <source src="video/yatch.mp4" type="video/mp4">
+        </video>
+        <div class="text-box">
+            <h1>Rüya Gibi Bir Tur</h1>
+            <p>Masmavi Sularda Sakin ve Eğlenceli Bir Yolculuğa Hazır Olun...</p>
+            <a class="more-btn" href="">Daha Fazlasını Keşfedin</a>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Neler Var</h2>
+        <h1>Kulüp Hizmetlerimiz</h1>
+        <div class="row">
+            <div class="services-col">
+                <img src="image/tur.jpg" alt="">
+                <h2>Yat Kiralama</h2>
+                <p>İstediğiniz yere yolculuk edin</p>
+                <a class="row-btn" href="">Daha Fazla</a>
+            </div>
+            <div class="services-col">
+                <img src="image/tur.jpg" alt="">
+                <h2>Yat Kiralama</h2>
+                <p>İstediğiniz yere yolculuk edin</p>
+                <a class="row-btn" href="">Daha Fazla</a>
+            </div>
+            <div class="services-col">
+                <img src="image/tur.jpg" alt="">
+                <h2>Yat Kiralama</h2>
+                <p>İstediğiniz yere yolculuk edin</p>
+                <a class="row-btn" href="">Daha Fazla</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="media">
+        <div class="media-row">
+            <div class="media-col">
+                <h2>Medya</h2>
+                <h1>Videomuzu izleyin</h1>
+                <p>Gerçekleştirdiğimiz turlarla keşfedebileceğiniz güzel manzaralar,eğlenceli mekanlar,tarihi yerler ve daha fazlası için turlarımıza katılın.</p>
+                <button>Galeriyi Görüntüle</button>
+            </div>
+            <div class="media-col">
+                <img id="image" src="image/jpgvideo.png">
+                <video id="play" autoplay controls>
+                    <source src="video/media1.mp4" >
+                </video>
+
+                <div id="icon" class="play">
+
+                    <span class="play-icon"><i class="bi bi-play-fill fa"
+                        onclick="play()"></i></span>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="travel">
+        <h2>Bizimle Seyahat Edin</h2>
+        <h1>Yaklaşan Rotalar</h1>
+
+        <div class="travel-row">
+            <div class="travel-col">
+                <a href="">
+                    <img src="image/italy.jpg">
+                </a>
+                <div class="travel-div">
+
+                    <a href="">
+                        <h2> <i class="fa-solid fa-location-dot"></i>Venedik - İtalya</h2>
+                    </a>
+                    <p class="date">29.11.2018 - 06.12.2018</p>
+                    <p class="p">Maecenas augue nibh, congue ut ante id, tempus vestibulum sem. Praesent interdum leo sit amet sapien porta interdum.</p>
+                    <p class="price"><span>$230</span> / person</p>
+                    <button>İncele</button>
+                </div>
+            </div>
+
+
+            <div class="travel-col1">
+
+                <a href="">
+                    <img src="image/italy.jpg">
+                </a>
+                <div class="travel-div">
+
+                    <a href="">
+                        <h2> <i class="fa-solid fa-location-dot"></i>Venedik - İtalya</h2>
+                    </a>
+                    <p class="date">29.11.2018 - 06.12.2018</p>
+                    <p class="p">Maecenas augue nibh, congue ut ante id, tempus vestibulum sem. Praesent interdum leo sit amet sapien porta interdum.</p>
+                    <p class="price"><span>$230</span> / person</p>
+                    <button>İncele</button>
+                </div>
+            </div>
+
+
+
+            <div class="travel-col">
+
+                <a href="">
+                    <img src="image/italy.jpg">
+                </a>
+                <div class="travel-div">
+
+                    <a href="">
+                        <h2> <i class="fa-solid fa-location-dot"></i>Venedik - İtalya</h2>
+                    </a>
+                    <p class="date">29.11.2018 - 06.12.2018</p>
+                    <p class="p">Maecenas augue nibh, congue ut ante id, tempus vestibulum sem. Praesent interdum leo sit amet sapien porta interdum.</p>
+                    <p class="price"><span>$230</span> / person</p>
+                    <button>İncele</button>
+                </div>
+            </div>
+
+
+
+            <div class="travel-col1">
+
+                <a href="">
+                    <img src="image/italy.jpg">
+                </a>
+                <div class="travel-div">
+
+                    <a href="">
+                        <h2> <i class="fa-solid fa-location-dot"></i>Venedik - İtalya</h2>
+                    </a>
+                    <p class="date">29.11.2018 - 06.12.2018</p>
+                    <p class="p">Maecenas augue nibh, congue ut ante id, tempus vestibulum sem. Praesent interdum leo sit amet sapien porta interdum.</p>
+                    <p class="price"><span>$230</span> / person</p>
+                    <button>İncele</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+    <section class="room">
+        <div class="room-row">
+            <div class="room-col">
+                <h2>Odalarımız</h2>
+                <h1>Neler Barındırıyor</h1>
+                <div class="room-cont-col">
+                    <img class="img-cont" src="image/room.jpg" alt="">
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <img src="image/bathroom.png">
+                        <div class="room-lcont">
+                            <h5>Banyo</h5>
+                            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="team">
+        <div class="head">
+            <h2>Denizciler</h2>
+            <h1>Takımla Tanışın</h1>
+            <p>Integer sagittis nisi nec tortor fermentum aliquet. Integer non neque tempor, porttitor lorem id, commodo nulla. Nullam sed ultricies erat, nec euismod metus. Morbi porttitor sapien vitae leo scelerisque consequat.</p>
+        </div>
+        <div class="team-row">
+            <div class="team-col">
+                <div class="team-cont">
+                    <a href="">
+                        <img src="image/sailor_01-340x340.jpg">
+                    </a>
+                </div>
+                <h3>Asım Özcan</h3>
+                <h4>Team Manager</h4>
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="team-col">
+                <div class="team-cont">
+                    <a href="">
+                        <img src="image/sailor_01-340x340.jpg">
+                    </a>
+                </div>
+                <h3>Asım Özcan</h3>
+                <h4>Team Manager</h4>
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="team-col">
+                <div class="team-cont">
+                    <a href="">
+                        <img src="image/sailor_01-340x340.jpg">
+                    </a>
+                </div>
+                <h3>Asım Özcan</h3>
+                <h4>Team Manager</h4>
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+        <a href=""><button> Daha Fazlası</button></a>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" script.js "></script>
+</body>
+
+</html>
+
+</html>
